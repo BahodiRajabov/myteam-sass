@@ -1,0 +1,107 @@
+.nav {
+  flex-grow: 1;
+}
+.nav__inner {
+  display: flex;
+  align-items: center;
+}
+.nav__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+.nav__link {
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.nav__contact {
+  margin-left: auto;
+}
+
+@include responsive(600) {
+  .nav {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .nav__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 68%;
+    height: 100%;
+    padding-left: 48px;
+    padding-top: 112px;
+    background-color: #2c6269;
+    background-image: url("../img/disc-red.png");
+    background-repeat: no-repeat;
+    background-position: right -100px bottom;
+    transform: translateX(100%);
+    animation-name: nav-animation;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  .nav__list {
+    flex-direction: column;
+    margin-bottom: 34px;
+    align-items: flex-start;
+  }
+  .nav__item:not(:last-child) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .nav__item {
+    transform: translateX(100%);
+    opacity: 0;
+    animation-name: nav-item;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  .nav__contact {
+    margin: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    animation-name: nav-item;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes nav-animation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes nav-item {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}

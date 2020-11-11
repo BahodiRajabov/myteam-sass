@@ -1,0 +1,14 @@
+.logo {
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: baseline;
+}
+.logo__img {
+  display: block;
+}
+@include responsive(768) {
+  .logo__img {
+    width: 128px;
+    height: 32px;
+  }
+}

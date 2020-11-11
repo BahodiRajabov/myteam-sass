@@ -1,0 +1,35 @@
+.header {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 80px;
+}
+@include responsive(768) {
+  .header {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .header__logo {
+    margin-right: 48px;
+  }
+}
+@include responsive(600) {
+  .header {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .header__container {
+    justify-content: space-between;
+  }
+  .header--open .header__nav {
+    display: block;
+  }
+  .header--open .header__toggler {
+    background-position: right center;
+  }
+}

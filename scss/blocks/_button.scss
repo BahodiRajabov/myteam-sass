@@ -1,0 +1,81 @@
+/* btn */
+
+.btn {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 8px 30px;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  font-size: 18px;
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn:active {
+  opacity: 0.7;
+}
+/* Light btn */
+.btn--light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn--light:hover {
+  background-color: #fff;
+  color: #002529;
+}
+
+.btn--light[disabled],
+.btn--light.disabled {
+  opacity: 0.25;
+  background-color: transparent;
+  color: #fff;
+  pointer-events: none;
+}
+
+/* Dark btn */
+
+.btn--dark {
+  border-color: #012f34;
+  color: #012f34;
+}
+
+.btn--dark:hover {
+  background-color: #012f34;
+  color: #fff;
+}
+
+.btn--dark[disabled],
+.btn--dark.disabled {
+  opacity: 0.25;
+  background-color: transparent;
+  color: #012f34;
+  pointer-events: none;
+}
+
+/* Secondary btn */
+
+.btn--secondary {
+  background-color: #fff;
+  border-color: #fff;
+  color: #002529;
+}
+
+.btn--secondary:hover {
+  border-color: #79c8c7;
+  background-color: #79c8c7;
+  color: #002529;
+}
+
+.btn--secondary[disabled],
+.btn--secondary.disabled {
+  opacity: 0.25;
+  background-color: #79c8c7;
+  color: #002529;
+  pointer-events: none;
+}

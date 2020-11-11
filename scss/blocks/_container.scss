@@ -1,0 +1,19 @@
+.container {
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@include responsive(768) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@include responsive(600) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__logo logo" href="index.html">
+        <img class="logo__img" src="./img/logo.svg" alt="myteam logo" width="160" height="40">
+      </a>
+      <div class="header__nav nav">
+        <nav class="nav__inner">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">about</a>
+            </li>
+          </ul>
+          <a class="nav__contact btn btn--light" href="#">contact us</a>
+        </nav>
+      </div>
+      <button class="header__toggler toggler-btn" type="button" aria-label="toggle menu button">
+      </button>
+    </div>
+  </header>
+
+
+  <script>
+    var header = document.querySelector('.header');
+    var btn = document.querySelector('.toggler-btn');
+    btn.addEventListener('click', () => {
+      header.classList.toggle('header--open');
+    });
+  </script>
+</body>
+
+</html>
