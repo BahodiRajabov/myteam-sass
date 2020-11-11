@@ -1,0 +1,72 @@
+.feature {
+  display: flex;
+  align-items: flex-start;
+  &::before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 23px;
+  }
+  &--man::before {
+    background-image: url("../img/man.png");
+  }
+  &--easy::before {
+    background-image: url("../img/easy.png");
+  }
+  &--diagram::before {
+    background-image: url("../img/diagram.png");
+  }
+}
+
+.feature__info {
+  max-width: 445px;
+}
+.feature__header {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f67e7e;
+}
+.feature__desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@include responsive(1150) {
+  .feature::before {
+    display: none;
+  }
+}
+@include responsive(768) {
+  .feature::before {
+    display: block;
+    flex-shrink: 0;
+  }
+}
+@include responsive(550) {
+  .feature {
+    text-align: center;
+    flex-direction: column;
+    &::before {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 16px;
+    }
+  }
+  .feature__info {
+    /* max-width: 327px; */
+    max-width: 100%;
+    width: 100%;
+  }
+}

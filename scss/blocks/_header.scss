@@ -17,7 +17,12 @@
   .header__logo {
     margin-right: 48px;
   }
+  .header__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
+
 @include responsive(600) {
   .header {
     padding-top: 48px;
@@ -31,5 +36,8 @@
   }
   .header--open .header__toggler {
     background-position: right center;
+    position: fixed;
+    top: 56px;
+    right: 20px;
   }
 }

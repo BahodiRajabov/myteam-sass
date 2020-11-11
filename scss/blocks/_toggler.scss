@@ -4,8 +4,7 @@
 @include responsive(600) {
   .toggler-btn {
     display: block;
-    position: fixed;
-    top: 56px;
+    position: absolute;
     right: 20px;
     z-index: 10;
     border: none;
