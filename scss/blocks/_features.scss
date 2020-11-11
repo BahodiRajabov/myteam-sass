@@ -49,7 +49,7 @@
   .features {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-position: right calc(50% - 390px) top;
+    background-position: right -100px top;
   }
   .features__container {
     flex-direction: column;
@@ -65,28 +65,11 @@
   .features__list {
     flex-direction: column;
   }
-}
-@include responsive(750) {
-  .features {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    background-position: right -100px top;
-  }
-  .features__container {
-    flex-direction: column;
-  }
-  .features__header {
-    margin-bottom: 56px;
-    max-width: 445px;
-  }
-  .features__list {
-    flex-direction: column;
-    justify-content: center;
-  }
   .features__item {
     margin-bottom: 48px;
   }
 }
+
 @media only screen and (max-width: 450px) {
   .features__header {
     max-width: 240px;

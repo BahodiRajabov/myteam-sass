@@ -963,7 +963,7 @@ img {
   .features {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-position: right calc(50% - 390px) top;
+    background-position: right -100px top;
   }
   .features__container {
     -webkit-box-orient: vertical;
@@ -984,33 +984,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .features {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    background-position: right -100px top;
-  }
-  .features__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .features__header {
-    margin-bottom: 56px;
-    max-width: 445px;
-  }
-  .features__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .features__item {
     margin-bottom: 48px;
@@ -1248,6 +1221,63 @@ img {
   }
   .review__user-job {
     margin-bottom: 16px;
+  }
+}
+
+.start {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: #f67e7e;
+  background-image: url("../img/action-bg.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 660px) bottom -100px;
+}
+
+.start__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+.start__header {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012f34;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .start {
+    background-position: left -10px bottom -120px;
+  }
+  .start__header {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .start__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .start__header {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 24px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

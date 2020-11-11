@@ -1,0 +1,43 @@
+.start {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: #f67e7e;
+  background-image: url("../img/action-bg.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 660px) bottom -100px;
+}
+.start__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+.start__header {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012f34;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+@include responsive(768) {
+  .start {
+    background-position: left -10px bottom -120px;
+  }
+  .start__header {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+@include responsive(700) {
+  .start__container {
+    flex-direction: column;
+  }
+  .start__header {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
