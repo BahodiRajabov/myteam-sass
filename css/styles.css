@@ -754,4 +754,139 @@ img {
     content: "";
   }
 }
+
+.intro {
+  padding-top: 60px;
+  padding-bottom: 250px;
+  background-image: url("../img/disc-dark.png"), url("../img/disc-double.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 770px) top 60px, right calc(50% - 400px) bottom -100px;
+}
+
+.intro__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro__header {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  color: #ffffff;
+  max-width: 620px;
+}
+
+.intro__header-span {
+  display: inline-block;
+  vertical-align: baseline;
+  color: #f67e7e;
+}
+
+.intro__desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 80px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  max-width: 450px;
+  position: relative;
+}
+
+.intro__desc::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 50px;
+  background-color: #79c8c7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+  .intro__header {
+    font-size: 80px;
+    line-height: 90px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    padding-top: 48px;
+    padding-bottom: 256px;
+    background-image: url("../img/disc-double.png");
+    background-repeat: no-repeat;
+    background-position: center bottom -100px;
+  }
+  .intro__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro__header {
+    margin-bottom: 24px;
+    margin-right: 0;
+    text-align: center;
+    font-size: 64px;
+    line-height: 56px;
+    max-width: 350px;
+  }
+  .intro__desc {
+    text-align: center;
+    padding-top: 0;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .intro__desc::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    padding-top: 32px;
+    padding-bottom: 197px;
+    background-image: url("../img/disc-double.png");
+    background-repeat: no-repeat;
+    background-position: center bottom -100px;
+  }
+  .intro__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro__header {
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    max-width: 245px;
+  }
+  .intro__desc {
+    text-align: center;
+    padding-top: 0;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,112 @@
+.intro {
+  padding-top: 60px;
+  padding-bottom: 250px;
+  background-image: url("../img/disc-dark.png"), url("../img/disc-double.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 770px) top 60px,
+    right calc(50% - 400px) bottom -100px;
+}
+.intro__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.intro__header {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  color: #ffffff;
+  max-width: 620px;
+}
+.intro__header-span {
+  display: inline-block;
+  vertical-align: baseline;
+  color: #f67e7e;
+}
+.intro__desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 80px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  max-width: 450px;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 50px;
+    background-color: #79c8c7;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@include responsive(1050) {
+  .intro__header {
+    font-size: 80px;
+    line-height: 90px;
+  }
+}
+@include responsive(768) {
+  .intro {
+    padding-top: 48px;
+    padding-bottom: 256px;
+    background-image: url("../img/disc-double.png");
+    background-repeat: no-repeat;
+    background-position: center bottom -100px;
+  }
+  .intro__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro__header {
+    margin-bottom: 24px;
+    margin-right: 0;
+    text-align: center;
+    font-size: 64px;
+    line-height: 56px;
+    max-width: 350px;
+  }
+  .intro__desc {
+    text-align: center;
+    padding-top: 0;
+    font-size: 15px;
+    line-height: 28px;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@include responsive(600) {
+  .intro {
+    padding-top: 32px;
+    padding-bottom: 197px;
+    background-image: url("../img/disc-double.png");
+    background-repeat: no-repeat;
+    background-position: center bottom -100px;
+  }
+  .intro__container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .intro__header {
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    max-width: 245px;
+  }
+  .intro__desc {
+    text-align: center;
+    padding-top: 0;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
