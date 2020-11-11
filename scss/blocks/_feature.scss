@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     margin-right: 23px;
+    flex-shrink: 0;
   }
   &--man::before {
     background-image: url("../img/man.png");
@@ -42,18 +43,7 @@
   opacity: 0.8;
 }
 
-@include responsive(1150) {
-  .feature::before {
-    display: none;
-  }
-}
-@include responsive(768) {
-  .feature::before {
-    display: block;
-    flex-shrink: 0;
-  }
-}
-@include responsive(550) {
+@include responsive(600) {
   .feature {
     text-align: center;
     flex-direction: column;

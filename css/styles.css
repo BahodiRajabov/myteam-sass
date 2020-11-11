@@ -920,7 +920,7 @@ img {
 .features__header {
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 125px;
+  margin-right: auto;
   padding-top: 54px;
   font-weight: bold;
   font-size: 48px;
@@ -1039,6 +1039,8 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 23px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .feature--man::before {
@@ -1077,21 +1079,7 @@ img {
   opacity: 0.8;
 }
 
-@media only screen and (max-width: 1150px) {
-  .feature::before {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .feature::before {
-    display: block;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-}
-
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   .feature {
     text-align: center;
     -webkit-box-orient: vertical;
