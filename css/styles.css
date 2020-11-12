@@ -1520,4 +1520,134 @@ img {
     margin-bottom: 16px;
   }
 }
+
+.about-intro {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-image: url("../img/about-intro.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 770px) bottom;
+}
+
+.about-intro__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__intro-header {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
+  max-width: 350px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+  color: #ffffff;
+}
+
+.about-intro__desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  max-width: 730px;
+  position: relative;
+}
+
+.about-intro__desc::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 50px;
+  background-color: #f67e7e;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+  .about-intro__header {
+    font-size: 80px;
+    line-height: 90px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-intro {
+    padding-top: 48px;
+    padding-bottom: 256px;
+    background-image: url("../img/disc-double.png");
+    background-repeat: no-repeat;
+    background-position: center bottom -100px;
+  }
+  .about-intro__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-intro__header {
+    margin-bottom: 24px;
+    margin-right: 0;
+    text-align: center;
+    font-size: 64px;
+    line-height: 56px;
+    max-width: 350px;
+  }
+  .about-intro__desc {
+    text-align: center;
+    padding-top: 0;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .about-intro__desc::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-intro {
+    padding-top: 32px;
+    padding-bottom: 197px;
+    background-image: url("../img/disc-double.png");
+    background-repeat: no-repeat;
+    background-position: center bottom -100px;
+  }
+  .about-intro__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-intro__header {
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    max-width: 245px;
+  }
+  .about-intro__desc {
+    text-align: center;
+    padding-top: 0;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
