@@ -296,6 +296,11 @@
   </footer>
 
   <script>
+    var header = document.querySelector('.header');
+    var btn = document.querySelector('.toggler-btn');
+    btn.addEventListener('click', () => {
+      header.classList.toggle('header--open');
+    });
     const elBtn = document.querySelectorAll(".more-btn") // + buttonni classi
     const elItem = document.querySelectorAll(".directors__item")  // itemni buttonni classi
     elBtn.forEach((b) => {
