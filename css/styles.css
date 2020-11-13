@@ -1270,11 +1270,17 @@ img {
 }
 
 @media only screen and (max-width: 700px) {
+  .start {
+    padding-top: 83px;
+    padding-bottom: 83px;
+  }
   .start__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .start__header {
     text-align: center;
