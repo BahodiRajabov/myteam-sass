@@ -1314,6 +1314,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1349,9 +1352,19 @@ img {
   color: #ffffff;
 }
 
+.footer__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .footer__address {
   margin: 0;
-  max-width: 170px;
+  max-width: 140px;
   width: 100%;
   font-weight: 600;
   font-size: 15px;
@@ -1434,9 +1447,10 @@ img {
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.6;
+  text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .footer__container {
     padding-left: 40px;
     padding-right: 40px;
@@ -1459,6 +1473,9 @@ img {
   }
   .footer__center {
     text-align: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .footer__connect {
     -webkit-box-flex: 1;
@@ -1477,9 +1494,12 @@ img {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .footer__nav {
     margin-bottom: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer__logo {
     margin-bottom: 24px;
@@ -1493,28 +1513,21 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .footer__center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
   .footer__address {
     max-width: 100%;
     width: 100%;
-    text-align: center;
-  }
-  .footer__tel {
-    text-align: center;
   }
   .footer__connect {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .footer__socials-list {
     margin-bottom: 16px;
