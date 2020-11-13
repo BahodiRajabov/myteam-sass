@@ -1417,11 +1417,11 @@ img {
   margin-right: 0;
 }
 
-.social__link {
+.footer__socials-link {
   display: block;
 }
 
-.social__link:hover .path {
+.footer__socials-link:hover .path {
   fill: #f67e7e;
 }
 
