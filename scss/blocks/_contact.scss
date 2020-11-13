@@ -144,6 +144,8 @@
     background-position: left -100px top 60px, right -120px bottom;
   }
   .contact__container {
+    padding-left: 125px;
+    padding-right: 125px;
     flex-direction: column;
     align-items: center;
   }
@@ -165,6 +167,10 @@
     background-image: url("../img/contact-bg-right.svg");
     background-repeat: no-repeat;
     background-position: right -120px bottom -100px;
+  }
+  .contact__container {
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .contact__header {
     font-size: 40px;
