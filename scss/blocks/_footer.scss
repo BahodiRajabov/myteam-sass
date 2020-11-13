@@ -138,6 +138,8 @@
 }
 @include responsive(500) {
   .footer__container {
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .footer__nav {
     margin-bottom: 24px;

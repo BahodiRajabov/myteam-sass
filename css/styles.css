@@ -837,6 +837,8 @@ img {
     background-position: center bottom -100px;
   }
   .intro__container {
+    padding-left: 40px;
+    padding-right: 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1495,6 +1497,10 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
+  .footer__container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .footer__nav {
     margin-bottom: 24px;
     -webkit-box-align: center;
