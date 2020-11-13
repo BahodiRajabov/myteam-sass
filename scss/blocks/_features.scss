@@ -44,7 +44,13 @@
 .features__item:not(:last-child) {
   margin-bottom: 32px;
 }
-
+@include responsive(850) {
+  .features__header {
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 400px;
+  }
+}
 @include responsive(768) {
   .features {
     padding-top: 100px;
@@ -58,8 +64,6 @@
     margin-bottom: 65px;
     margin-right: 0;
     padding-top: 32px;
-    font-size: 32px;
-    line-height: 32px;
     max-width: 445px;
   }
   .features__list {

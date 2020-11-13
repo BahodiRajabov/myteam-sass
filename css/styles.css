@@ -961,6 +961,14 @@ img {
   margin-bottom: 32px;
 }
 
+@media only screen and (max-width: 850px) {
+  .features__header {
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 400px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .features {
     padding-top: 100px;
@@ -977,8 +985,6 @@ img {
     margin-bottom: 65px;
     margin-right: 0;
     padding-top: 32px;
-    font-size: 32px;
-    line-height: 32px;
     max-width: 445px;
   }
   .features__list {
@@ -1069,7 +1075,6 @@ img {
     margin-bottom: 16px;
   }
   .feature__info {
-    /* max-width: 327px; */
     max-width: 100%;
     width: 100%;
   }
