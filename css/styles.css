@@ -1120,7 +1120,7 @@ img {
   margin-right: 30px;
 }
 
-.review__desc {
+.reviews__desc {
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
@@ -1129,7 +1129,7 @@ img {
   margin-bottom: 24px;
 }
 
-.review__user-name {
+.reviews__user-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
@@ -1138,7 +1138,7 @@ img {
   margin-bottom: 2px;
 }
 
-.review__user-job {
+.reviews__user-job {
   font-weight: 500;
   font-style: italic;
   font-size: 13px;
@@ -1148,7 +1148,7 @@ img {
   margin-bottom: 43px;
 }
 
-.review__user-img {
+.reviews__user-img {
   border-radius: 50%;
   /* border: 2px solid #c4fffe; */
 }
@@ -1182,10 +1182,10 @@ img {
   .reviews__item:not(:last-child) {
     margin-right: 0;
   }
-  .review__desc {
+  .reviews__desc {
     margin-bottom: 16px;
   }
-  .review__user-job {
+  .reviews__user-job {
     margin-bottom: 16px;
   }
 }
@@ -1216,10 +1216,10 @@ img {
   .reviews__item:not(:last-child) {
     margin-right: 0;
   }
-  .review__desc {
+  .reviews__desc {
     margin-bottom: 16px;
   }
-  .review__user-job {
+  .reviews__user-job {
     margin-bottom: 16px;
   }
 }
